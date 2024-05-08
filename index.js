@@ -5,6 +5,8 @@ let guestScoreBtnOne = document.getElementById("guest-score-btn-1");
 let guestScoreBtnTwo = document.getElementById("guest-score-btn-2");
 let guestScoreBtnThree = document.getElementById("guest-score-btn-3");
 
+let resetGameBtn = document.getElementById("reset-game");
+
 let homeScoreEl =document.getElementById("home-score");
 let guestScoreEl =document.getElementById("guest-score");
 let homeScore = 0;
@@ -41,4 +43,12 @@ guestScoreBtnTwo.addEventListener("click", function() {
 });
 guestScoreBtnThree.addEventListener("click", function() {
     increaseGuestScore(3);
+});
+
+// Reset game counters to 0
+resetGameBtn.addEventListener("click", function() {
+    homeScore = 0;
+    guestScore = 0;
+    homeScoreEl.textContent = homeScore;
+    guestScoreEl.textContent = guestScore;
 });

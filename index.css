@@ -2,16 +2,19 @@ body {
     margin: 0;
 }
 
-.title {
-    width: 60%;
-    margin: 4rem auto 0 auto;
+.title {    
     text-align: center;
+    color: #fff;
 }
 .container {
+    margin: 4rem auto 0 auto;
     width: 60%;
-    margin: 0 auto;
-    padding: 2rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(71, 46, 13);
+}
+.two-columns {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
@@ -32,4 +35,14 @@ body {
 button {
     background-color: white;
     cursor: pointer;
+}
+.reset button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 20px auto;
+    font-size: 120%;
+    background: none;
+    color: #fff;
 }
