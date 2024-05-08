@@ -2,7 +2,34 @@ body {
     margin: 0;
 }
 
+.title {
+    width: 60%;
+    margin: 4rem auto 0 auto;
+    text-align: center;
+}
 .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0;
+    background-color: rgb(71, 46, 13);
     display: flex;
     justify-content: space-around;
+}
+.column {
+    text-align: center;
+}
+.column h3 {
+    color: rgb(255, 223, 96);
+    font-size: 30px;
+}
+.score {
+    background: #0a0001;
+    font-size: 90px;
+    color: lightgoldenrodyellow;
+    width: 120px;
+    margin: 20px;
+}
+button {
+    background-color: white;
+    cursor: pointer;
 }
